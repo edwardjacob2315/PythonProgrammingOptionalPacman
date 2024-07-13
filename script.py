@@ -19,7 +19,7 @@ class Transaction:
         self.items[name][1] = new_price
 
     def delete_item(self, name):
-        if name in self.items():
+        if name in self.items.keys():
             del self.items[name]
 
     def reset_transaction(self):
